@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday — Buku Kecil 🎀</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="blobs">
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+  <div class="blob blob4"></div>
+</div>
+<div id="floaters"></div>
+
+<div class="stage">
+  <div class="book-wrap">
+    <div class="book" id="book">
+
+      <!-- PAGE 0: COVER -->
+      <div class="page cover" style="z-index:6">
+        <div class="face front">
+          <div class="ribbon">🎀</div>
+          <h1>Untuk<br><span contenteditable="true" spellcheck="false">Sayangku</span></h1>
+          <div class="sub">Sebuah hadiah kecil dan simple buat kamu sayanggg</div>
+          <button class="open-btn" id="openBtn">Buka ✨</button>
+        </div>
+        <div class="face back"><div class="wm">🩷</div></div>
+      </div>
+
+      <!-- PAGE 1: HERO -->
+      <div class="page hero-page" style="z-index:5">
+        <div class="face front">
+          <div class="eyebrow">Hari ini spesial untuk</div>
+          <h1 class="bounce-in">Selamat Ulang Tahun,<br><span contenteditable="true" spellcheck="false">Sayangku</span>🤍</h1>
+          <p class="sub">Selamat ulang tahun sayangku. 🤍
+
+Hari ini adalah hari yang sangat spesial karena dunia pernah menghadirkan seseorang sebaik, sehangat, dan seberharga dirimu. Terima kasih sudah hadir dalam hidupku, menjadi tempatku bercerita, tertawa, dan berbagi banyak hal.
+
+Semoga di usia yang baru ini, semua doa dan impianmu satu per satu menjadi kenyataan. Semoga kamu selalu diberi kesehatan, kebahagiaan, rezeki yang melimpah, dan dikelilingi oleh orang-orang yang tulus menyayangimu.
+
+Aku berharap kita bisa terus tumbuh bersama, saling mendukung dalam setiap langkah, melewati suka maupun duka, dan menjaga hubungan ini dengan penuh cinta dan kepercayaan. Terima kasih karena sudah menjadi alasan di balik banyak senyumku.
+
+Nikmati hari spesialmu sebaik mungkin. Jangan lupa banyak tersenyum, karena senyummu adalah salah satu hal favoritku.
+
+Sekali lagi, selamat ulang tahun, cintaku. Semoga tahun ini menjadi awal dari banyak kebahagiaan baru. Aku sayang kamu, hari ini, besok, dan seterusnya. ❤️
+
+          <div class="cake-wrap" id="cakeWrap">
+            <svg viewBox="0 0 200 170" width="150" height="128">
+              <ellipse cx="100" cy="150" rx="72" ry="10" fill="#5C3A55" opacity="0.08"/>
+              <!-- layer 1 -->
+              <rect x="28" y="108" width="144" height="38" rx="9" fill="#FFC1DA"/>
+              <rect x="34" y="120" width="8" height="8" rx="2" fill="#FFD3B0" transform="rotate(20 38 124)"/>
+              <rect x="60" y="126" width="8" height="8" rx="2" fill="#E7D9F5" transform="rotate(-10 64 130)"/>
+              <rect x="96" y="118" width="8" height="8" rx="2" fill="#FF7CA3" transform="rotate(15 100 122)"/>
+              <rect x="130" y="128" width="8" height="8" rx="2" fill="#FFD3B0" transform="rotate(-15 134 132)"/>
+              <rect x="152" y="116" width="8" height="8" rx="2" fill="#E7D9F5" transform="rotate(10 156 120)"/>
+              <!-- layer 2 -->
+              <rect x="46" y="78" width="108" height="34" rx="9" fill="#FFD3B0"/>
+              <rect x="58" y="90" width="7" height="7" rx="2" fill="#FF7CA3" transform="rotate(12 61 93)"/>
+              <rect x="90" y="96" width="7" height="7" rx="2" fill="#FFC1DA" transform="rotate(-12 93 99)"/>
+              <rect x="122" y="88" width="7" height="7" rx="2" fill="#E7D9F5" transform="rotate(18 125 91)"/>
+              <!-- layer 3 top with frosting -->
+              <rect x="62" y="54" width="76" height="28" rx="10" fill="#FFFDFB"/>
+              <circle cx="66" cy="55" r="8" fill="#FFFDFB"/>
+              <circle cx="82" cy="52" r="8" fill="#FFFDFB"/>
+              <circle cx="100" cy="50" r="9" fill="#FFFDFB"/>
+              <circle cx="118" cy="52" r="8" fill="#FFFDFB"/>
+              <circle cx="134" cy="55" r="8" fill="#FFFDFB"/>
+              <!-- candles -->
+              <rect x="80" y="30" width="6" height="24" rx="2" fill="#FF7CA3"/>
+              <rect x="80" y="36" width="6" height="4" fill="#FFFDFB"/>
+              <rect x="80" y="44" width="6" height="4" fill="#FFFDFB"/>
+              <rect x="97" y="24" width="6" height="30" rx="2" fill="#F4568F"/>
+              <rect x="97" y="31" width="6" height="4" fill="#FFFDFB"/>
+              <rect x="97" y="40" width="6" height="4" fill="#FFFDFB"/>
+              <rect x="114" y="30" width="6" height="24" rx="2" fill="#FF7CA3"/>
+              <rect x="114" y="36" width="6" height="4" fill="#FFFDFB"/>
+              <rect x="114" y="44" width="6" height="4" fill="#FFFDFB"/>
+              <!-- flames (masing-masing bisa dipencet sendiri) -->
+              <g class="flame-hit" data-idx="1">
+                <circle cx="83" cy="20" r="13" fill="transparent"/>
+                <path class="flame flame1" d="M83 30 C80 24 84 18 83 14 C88 19 89 26 83 30 Z" fill="url(#flameGrad)"/>
+                <path class="smoke smoke1" d="M83 20 Q78 12 84 4" stroke="#C9BFC7" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              </g>
+              <g class="flame-hit" data-idx="2">
+                <circle cx="100" cy="14" r="13" fill="transparent"/>
+                <path class="flame flame2" d="M100 24 C97 18 101 12 100 8 C105 13 106 20 100 24 Z" fill="url(#flameGrad)"/>
+                <path class="smoke smoke2" d="M100 14 Q95 6 101 -2" stroke="#C9BFC7" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              </g>
+              <g class="flame-hit" data-idx="3">
+                <circle cx="117" cy="20" r="13" fill="transparent"/>
+                <path class="flame flame3" d="M117 30 C114 24 118 18 117 14 C122 19 123 26 117 30 Z" fill="url(#flameGrad)"/>
+                <path class="smoke smoke3" d="M117 20 Q112 12 118 4" stroke="#C9BFC7" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              </g>
+              <defs>
+                <linearGradient id="flameGrad" x1="0" y1="1" x2="0" y2="0">
+                  <stop offset="0%" stop-color="#F4568F"/>
+                  <stop offset="55%" stop-color="#FF9F5A"/>
+                  <stop offset="100%" stop-color="#FFE08A"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="cake-hint" id="cakeHint"></div>
+            <div class="wish-text" id="wishText">semoga semua harapanmu terkabul 🌟</div>
+          </div>
+        </div>
+        <div class="face back"><div class="wm">🎈</div></div>
+        <div class="pagenum">1</div>
+      </div>
+
+      <!-- PAGE 2: GALLERY -->
+      <div class="page gallery-page" style="z-index:7">
+        <div class="face front">
+          <div class="sparkle-layer">
+            <span style="top:8%;left:12%;animation-delay:.2s;">✨</span>
+            <span style="top:18%;left:80%;animation-delay:1.1s;">⭐</span>
+            <span style="top:70%;left:6%;animation-delay:.7s;">✨</span>
+          </div>
+          <div class="gal-title">
+            <div class="tag">Kenangan Kita</div>
+            <h2 class="bounce-in">Galeri Foto</h2>
+          </div>
+          <div class="gal-grid" id="galleryGrid"></div>
+        </div>
+        <div class="face back"><div class="wm">📷</div></div>
+        <div class="pagenum">2</div>
+      </div>
+
+      <!-- PAGE 3: GALLERY 2 -->
+      <div class="page gallery-page" style="z-index:6">
+        <div class="face front">
+          <div class="sparkle-layer">
+            <span style="top:10%;left:85%;animation-delay:.4s;">🌟</span>
+            <span style="top:60%;left:8%;animation-delay:1.4s;">✨</span>
+            <span style="top:82%;left:70%;animation-delay:.9s;">⭐</span>
+          </div>
+          <div class="gal-title">
+            <div class="tag">Momen Lucu</div>
+            <h2 class="bounce-in">Galeri Foto 2</h2>
+          </div>
+          <div class="gal-grid" id="galleryGrid2"></div>
+        </div>
+        <div class="face back"><div class="wm">🧸</div></div>
+        <div class="pagenum">3</div>
+      </div>
+
+      <!-- PAGE 4: GALLERY 3 -->
+      <div class="page gallery-page" style="z-index:5.5">
+        <div class="face front">
+          <div class="sparkle-layer">
+            <span style="top:14%;left:14%;animation-delay:.1s;">✨</span>
+            <span style="top:66%;left:82%;animation-delay:1.2s;">🌟</span>
+            <span style="top:40%;left:50%;animation-delay:.6s;">⭐</span>
+          </div>
+          <div class="gal-title">
+            <div class="tag">Momen kelulusan</div>
+            <h2 class="bounce-in">Galeri Foto 3</h2>
+          </div>
+          <div class="gal-grid" id="galleryGrid3"></div>
+        </div>
+        <div class="face back"><div class="wm">💐</div></div>
+        <div class="pagenum">4</div>
+      </div>
+
+      <!-- PAGE 5: CAKE -->
+      <div class="page cake-page-2" style="z-index:5">
+        <div class="face front">
+          <div class="sparkle-layer">
+            <span style="top:10%;left:10%;animation-delay:.3s;">✨</span>
+            <span style="top:16%;left:84%;animation-delay:1.3s;">🎉</span>
+            <span style="top:78%;left:18%;animation-delay:.8s;">⭐</span>
+            <span style="top:72%;left:78%;animation-delay:.5s;">🌟</span>
+          </div>
+          <div class="tag">Kue Ulang Tahunmu</div>
+          <h2 class="bounce-in">Tiup Lilinnya Lagi, Yuk!</h2>
+          <div class="cake-wrap" id="cakeWrap2">
+            <svg viewBox="0 0 200 170" width="200" height="170">
+              <ellipse cx="100" cy="150" rx="88" ry="11" fill="#5C3A55" opacity="0.08"/>
+              <rect x="16" y="106" width="168" height="42" rx="10" fill="#FFC1DA"/>
+              <rect x="24" y="120" width="9" height="9" rx="2" fill="#FFD3B0" transform="rotate(20 28 124)"/>
+              <rect x="54" y="128" width="9" height="9" rx="2" fill="#E7D9F5" transform="rotate(-10 58 132)"/>
+              <rect x="96" y="118" width="9" height="9" rx="2" fill="#FF7CA3" transform="rotate(15 100 122)"/>
+              <rect x="138" y="128" width="9" height="9" rx="2" fill="#FFD3B0" transform="rotate(-15 142 132)"/>
+              <rect x="166" y="116" width="9" height="9" rx="2" fill="#E7D9F5" transform="rotate(10 170 120)"/>
+              <rect x="32" y="76" width="136" height="34" rx="10" fill="#FFD3B0"/>
+              <rect x="48" y="90" width="8" height="8" rx="2" fill="#FF7CA3" transform="rotate(12 52 94)"/>
+              <rect x="90" y="96" width="8" height="8" rx="2" fill="#FFC1DA" transform="rotate(-12 94 100)"/>
+              <rect x="132" y="88" width="8" height="8" rx="2" fill="#E7D9F5" transform="rotate(18 136 92)"/>
+              <rect x="48" y="50" width="104" height="30" rx="11" fill="#FFFDFB"/>
+              <circle cx="52" cy="51" r="9" fill="#FFFDFB"/>
+              <circle cx="72" cy="48" r="9" fill="#FFFDFB"/>
+              <circle cx="94" cy="46" r="10" fill="#FFFDFB"/>
+              <circle cx="116" cy="48" r="9" fill="#FFFDFB"/>
+              <circle cx="136" cy="51" r="9" fill="#FFFDFB"/>
+              <circle cx="150" cy="55" r="9" fill="#FFFDFB"/>
+              <rect x="45" y="26" width="7" height="26" rx="2" fill="#F4568F"/>
+              <rect x="45" y="33" width="7" height="4" fill="#FFFDFB"/>
+              <rect x="45" y="42" width="7" height="4" fill="#FFFDFB"/>
+              <rect x="69" y="20" width="7" height="32" rx="2" fill="#FF7CA3"/>
+              <rect x="69" y="27" width="7" height="4" fill="#FFFDFB"/>
+              <rect x="69" y="36" width="7" height="4" fill="#FFFDFB"/>
+              <rect x="93" y="16" width="7" height="36" rx="2" fill="#F4568F"/>
+              <rect x="93" y="23" width="7" height="4" fill="#FFFDFB"/>
+              <rect x="93" y="32" width="7" height="4" fill="#FFFDFB"/>
+              <rect x="117" y="20" width="7" height="32" rx="2" fill="#FF7CA3"/>
+              <rect x="117" y="27" width="7" height="4" fill="#FFFDFB"/>
+              <rect x="117" y="36" width="7" height="4" fill="#FFFDFB"/>
+              <rect x="141" y="26" width="7" height="26" rx="2" fill="#F4568F"/>
+              <rect x="141" y="33" width="7" height="4" fill="#FFFDFB"/>
+              <rect x="141" y="42" width="7" height="4" fill="#FFFDFB"/>
+              <g class="flame-hit" data-idx="1">
+                <circle cx="48" cy="16" r="13" fill="transparent"/>
+                <path class="flame flame1" d="M48 26 C45 20 49 14 48 10 C53 15 54 22 48 26 Z" fill="url(#flameGrad2)"/>
+                <path class="smoke smoke1" d="M48 16 Q43 8 49 0" stroke="#C9BFC7" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              </g>
+              <g class="flame-hit" data-idx="2">
+                <circle cx="72" cy="10" r="13" fill="transparent"/>
+                <path class="flame flame2" d="M72 20 C69 14 73 8 72 4 C77 9 78 16 72 20 Z" fill="url(#flameGrad2)"/>
+                <path class="smoke smoke2" d="M72 10 Q67 2 73 -6" stroke="#C9BFC7" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              </g>
+              <g class="flame-hit" data-idx="3">
+                <circle cx="96" cy="6" r="13" fill="transparent"/>
+                <path class="flame flame3" d="M96 16 C93 10 97 4 96 0 C101 5 102 12 96 16 Z" fill="url(#flameGrad2)"/>
+                <path class="smoke smoke3" d="M96 6 Q91 -2 97 -10" stroke="#C9BFC7" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              </g>
+              <g class="flame-hit" data-idx="4">
+                <circle cx="120" cy="10" r="13" fill="transparent"/>
+                <path class="flame flame1" d="M120 20 C117 14 121 8 120 4 C125 9 126 16 120 20 Z" fill="url(#flameGrad2)"/>
+                <path class="smoke smoke2" d="M120 10 Q115 2 121 -6" stroke="#C9BFC7" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              </g>
+              <g class="flame-hit" data-idx="5">
+                <circle cx="144" cy="16" r="13" fill="transparent"/>
+                <path class="flame flame3" d="M144 26 C141 20 145 14 144 10 C149 15 150 22 144 26 Z" fill="url(#flameGrad2)"/>
+                <path class="smoke smoke1" d="M144 16 Q139 8 145 0" stroke="#C9BFC7" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              </g>
+              <defs>
+                <linearGradient id="flameGrad2" x1="0" y1="1" x2="0" y2="0">
+                  <stop offset="0%" stop-color="#F4568F"/>
+                  <stop offset="55%" stop-color="#FF9F5A"/>
+                  <stop offset="100%" stop-color="#FFE08A"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <div class="cake-hint" id="cakeHint2">pencet lilinnya satu-satu, yuk 🕯️</div>
+            <div class="wish-text" id="wishText2">Selamat Ulang Tahun Cintaku 🤍</div>
+          </div>
+        </div>
+        <div class="face back"><div class="wm">🎂</div></div>
+        <div class="pagenum">5</div>
+      </div>
+
+      <!-- PAGE 6: LETTER -->
+      <div class="page letter-page" style="z-index:4">
+        <div class="face front">
+          <div class="heart-sprinkles" aria-hidden="true"><span>&hearts;</span><span>&hearts;</span><span>&hearts;</span></div>
+          <div class="tag-wrap">
+            <div class="tag">Sepucuk Surat</div>
+            <h2 class="bounce-in">Untukmu 💌</h2>
+          </div>
+          <p contenteditable="true" spellcheck="false">Di hari ulang tahunmu ini, aku cuma mau bilang: terima kasih sudah jadi kamu. Terima kasih untuk setiap tawa dan cerita panjang setiap hari.</p>
+          <p contenteditable="true" spellcheck="false">Semoga tahun ini membawa lebih banyak kebahagiaan kecil di setiap harimu. Aku akan selalu ada di sampingmu.</p>
+          <div class="signature" contenteditable="true" spellcheck="false">—Written with love, Zlatan</div>
+        </div>
+        <div class="face back"><div class="wm">💌</div></div>
+        <div class="pagenum">6</div>
+      </div>
+
+      <!-- PAGE 7: PHOTOBOX -->
+      <div class="page photobox-page" style="z-index:3.5">
+        <div class="face front">
+          <div class="heart-sprinkles" aria-hidden="true"><span>&hearts;</span><span>&hearts;</span><span>&hearts;</span><span>&hearts;</span></div>
+          <div class="tag">Photobox Kita</div>
+          <h2 class="bounce-in">Tirai Foto</h2>
+          <div class="photobox-layout">
+            <div class="booth">
+              <div class="curtain curtain-left"></div>
+              <div class="curtain curtain-right"></div>
+              <div class="booth-window" style="background-image: url('fotobox.jpg');"></div>
+            </div>
+            <div class="photo-result">
+              <div class="result-title">Hasil Foto</div>
+              <div class="photo-strip">
+                <div class="strip-photo" style="background-image: url('1.jpg');"></div>
+<div class="strip-photo" style="background-image: url('foto13.jpg');"></div>
+<div class="strip-photo" style="background-image: url('foto14.jpg');"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="face back"><div class="wm">&hearts;</div></div>
+        <div class="pagenum">7</div>
+      </div>
+
+      <!-- PAGE 8: GAME HEART CATCH -->
+      <div class="page game-page" style="z-index:3">
+        <div class="face front">
+          <div class="tag">Mini Game</div>
+          <h2 class="bounce-in">Tangkap Hati</h2>
+          <div class="game-score">Skor: <span id="heartScore">0</span>/8</div>
+          <div class="heart-game" id="heartGame"></div>
+          <button class="surprise-btn game-reset" id="resetHeartGame" type="button">Main Lagi</button>
+        </div>
+        <div class="face back"><div class="wm">&hearts;</div></div>
+        <div class="pagenum">8</div>
+      </div>
+
+      <!-- PAGE 9: GAME QUIZ -->
+      <div class="page quiz-page" style="z-index:2.5">
+        <div class="face front">
+          <div class="heart-sprinkles" aria-hidden="true"><span>&hearts;</span><span>&hearts;</span><span>&hearts;</span></div>
+          <div class="tag">Game Kecil</div>
+          <h2 class="bounce-in">Pilih Hadiah</h2>
+          <p class="quiz-copy">Pilih satu kotak. Semuanya isinya doa baik buat kamu.</p>
+          <div class="gift-grid">
+            <button class="gift-card" data-message="Aku selalu sayangggggg bangettt samaa kamuuuuuu." type="button">&hearts;</button>
+            <button class="gift-card" data-message="Semoga semua wishlist Kamu tahun ini terwujud." type="button">LOVE</button>
+            <button class="gift-card" data-message="Senyumm bikin aku salting setiap saat LOVE U SAYANGKUUU." type="button">&hearts;</button>
+          </div>
+          <div class="gift-result" id="giftResult">Klik salah satu kotak ya.</div>
+        </div>
+        <div class="face back"><div class="wm">LOVE</div></div>
+        <div class="pagenum">9</div>
+      </div>
+
+      <!-- PAGE 10: WISHLIST -->
+      <div class="page note-page wishlist-page" style="z-index:2.4">
+        <div class="face front">
+          <div class="heart-sprinkles" aria-hidden="true"><span>&hearts;</span><span>&hearts;</span><span>&hearts;</span></div>
+          <div class="tag">Harapan Kecil</div>
+          <h2 class="bounce-in">Wishlist Tahun Ini Buat kita </h2>
+          <div class="wish-list">
+            <div contenteditable="true" spellcheck="false">1. Semoga Kita Selalu Saling Sayang.</div>
+            <div contenteditable="true" spellcheck="false">2. Semoga impian Kita berdua terwujud.</div>
+            <div contenteditable="true" spellcheck="false">3. Semoga kita ditakdirkan untuk tetap bersama.</div>
+            <div contenteditable="true" spellcheck="false">4. Dimudahkan dalam segala urusan, terutama saat kuliah besok AAMIIN.</div>
+          </div>
+        </div>
+        <div class="face back"><div class="wm">&hearts;</div></div>
+        <div class="pagenum">10</div>
+      </div>
+
+      <!-- PAGE 11: COUPONS -->
+      <div class="page coupon-page" style="z-index:2.3">
+        <div class="face front">
+          <div class="tag">Kupon Sayang</div>
+          <h2 class="bounce-in">Boleh Dipakai Kapan Aja UNLIMITED!!</h2>
+          <div class="coupon-grid">
+            <div class="coupon" contenteditable="true" spellcheck="false">♾️ Kupon Cinta Tanpa Batas</div>
+            <div class="coupon" contenteditable="true" spellcheck="false">💕 Kupon ditemenin cerita</div>
+            <div class="coupon" contenteditable="true" spellcheck="false">🥰 Kupon jalan berdua</div>
+            <div class="coupon" contenteditable="true" spellcheck="false">😘 Kupon beritbu maaf</div>
+          </div>
+        </div>
+        <div class="face back"><div class="wm">LOVE</div></div>
+        <div class="pagenum">11</div>
+      </div>
+
+      <!-- PAGE 13: VIDEO -->
+      <div class="page video-page" style="z-index:2.1">
+        <div class="face front">
+          <div class="heart-sprinkles" aria-hidden="true"><span>&hearts;</span><span>&hearts;</span><span>&hearts;</span><span>&hearts;</span></div>
+          <div class="tag">Video Spesial</div>
+          <h2 class="bounce-in">Satu Video Buat Kamu</h2>
+          <div class="video-frame">
+            <div class="video-ribbon">LOVE</div>
+            <video class="memory-video" controls poster="">
+              <source src="vid1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <p class="video-note" contenteditable="true" spellcheck="false"></p>
+        </div>
+        <div class="face back"><div class="wm">LOVE</div></div>
+        <div class="pagenum">13</div>
+      </div>
+
+      <!-- PAGE 4: SURPRISE -->
+      <div class="page surprise-page" style="z-index:2">
+        <div class="face front">
+          <div class="heart-sprinkles" aria-hidden="true"><span>&hearts;</span><span>&hearts;</span><span>&hearts;</span></div>
+          <div class="tag">Satu Lagi</div>
+          <h2 class="bounce-in">Tekan untuk Kejutan</h2>
+          <button class="surprise-btn" id="surpriseBtn">🎁 Buka Kejutan</button>
+          <div class="reveal" id="revealText">Semoga kamu tumbuh menjadi pribadi yang lebih hebat, selalu dilindungi, dan didekatkan dengan segala hal baik. Terima kasih sudah berjuang bersamaku sampai hari ini. 💗</div>
+        </div>
+        <div class="face back"><div class="wm">🎁</div></div>
+        <div class="pagenum">14</div>
+      </div>
+
+      <!-- PAGE 5: CLOSING -->
+      <div class="page closing-page" style="z-index:1">
+        <div class="face front">
+          <div class="heart-sprinkles" aria-hidden="true"><span>&hearts;</span><span>&hearts;</span><span>&hearts;</span></div>
+          <h2 class="bounce-in">Selamat Ulang Tahun Sekali Lagi Sayangku 🤍</h2>
+          <p>dibuat dengan sepenuh hati oleh mamas ganteng ZLATAN, khusus untuk pacarku tercinta.</p>
+          <button class="again-btn" id="againBtn">↺ Baca dari Awal</button>
+        </div>
+        <div class="face back"><div class="wm">🤍</div></div>
+        <div class="pagenum">15</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="nav">
+    <button id="prevBtn">←</button>
+    <div class="dots" id="dots"></div>
+    <button id="nextBtn">→</button>
+  </div>
+</div>
+
+<!-- MUSIC WIDGET -->
+<div class="music-widget" id="musicWidget">
+  <div class="bars"><span></span><span></span><span></span><span></span></div>
+  <label for="audioUpload">+ musik</label>
+  <input type="file" id="audioUpload" accept="audio/*">
+</div>
+<audio id="bgAudio" loop src="cintaku.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
